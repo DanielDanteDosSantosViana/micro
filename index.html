@@ -31,20 +31,15 @@
         <h3>
 <a id="what-is-micro" class="anchor" href="#what-is-micro" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What is Micro?</h3>
 
-<p>Micro is a microservices toolkit. It provides a set of libraries and services for development and management of distributed systems. At the core, micro is simple and accessible enough that anyone can get started very quickly. As you scale to hundreds of applications, micro will provide the fundamental tools required to manage a microservice environment.</p>
+<p>Micro is a microservices toolkit. It's goal is to simplify distributed systems development.</p>
 
 <h3>
 <a id="what-are-microservices" class="anchor" href="#what-are-microservices" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What are microservices?</h3>
 
-<p>Microservices is an architecture pattern used to decompose a single large application in to a smaller suite of services. Generally the goal is to create light weight services of 1000 lines of code or less. Each service alone provides a particular focused solution or set of solutions. These small services can be used as the foundational building blocks in the creation of a larger system.</p>
-
-<p>The concept of microservices is not new, this is the reimagination of service orientied architecture but with an approach more holistically aligned with unix processes and pipes. For those of us with extensive experience in this field we're somewhat biased and feel this is an incredibly beneficial approach to system design at large and developer productivity.</p>
+<p>Microservices is an architecture pattern used to decompose an application into many small services which communicate over a network.</p>
 
 <h3>
-<a id="what-does-micro-provide" class="anchor" href="#what-does-micro-provide" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What does Micro provide?</h3>
-
-<h2>
-<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h3>
 
 <table>
 <thead>
@@ -55,24 +50,12 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="https://godoc.org/github.com/micro/go-micro/registry">Discovery</a></td>
-<td>Find running services</td>
+<td><a href="https://godoc.org/github.com/micro/go-micro">Go-Micro</a></td>
+<td>A Go RPC framework</td>
 </tr>
 <tr>
-<td><a href="https://godoc.org/github.com/micro/go-micro/client">Client</a></td>
-<td>Query services via RPC</td>
-</tr>
-<tr>
-<td><a href="https://godoc.org/github.com/micro/go-micro/server">Server</a></td>
-<td>Listen and serve RPC requests</td>
-</tr>
-<tr>
-<td><a href="https://godoc.org/github.com/micro/go-micro/broker">Pub/Sub</a></td>
-<td>Publish and subscribe to events</td>
-</tr>
-<tr>
-<td><a href="https://github.com/micro/micro/tree/master/api">API Gateway</a></td>
-<td>Lightweight gateway/proxy. Convert http requests to rpc</td>
+<td><a href="https://github.com/micro/micro/tree/master/api">API</a></td>
+<td>API Gateway</td>
 </tr>
 <tr>
 <td><a href="https://github.com/micro/micro/tree/master/cli">CLI</a></td>
@@ -80,71 +63,23 @@
 </tr>
 <tr>
 <td><a href="https://github.com/micro/micro/tree/master/car">Sidecar</a></td>
-<td>Integrate any application into the Micro ecosystem</td>
+<td>Language agnostic RPC proxy</td>
 </tr>
 <tr>
-<td><a href="https://github.com/micro/micro/tree/master/web">Web UI/Proxy</a></td>
-<td>A visual way to view and query services</td>
+<td><a href="https://github.com/micro/micro/tree/master/web">Web</a></td>
+<td>Web UI and reverse proxy</td>
 </tr>
 </tbody>
 </table>
 
-<h3>
-<a id="where-do-i-start" class="anchor" href="#where-do-i-start" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Where do I start?</h3>
-
-<p>Check out some of the example services. </p>
-
-<p>Or start writing services now with <a href="https://github.com/micro/go-micro">go-micro</a></p>
-
-<table>
-<thead>
-<tr>
-<th>Project</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/micro/geo-srv">geo-srv</a></td>
-<td>Geolocation tracking service using hailocab/go-geoindex</td>
-</tr>
-<tr>
-<td><a href="https://github.com/micro/geocode-srv">geocode-srv</a></td>
-<td>A geocoding service using the Google Geocoding API</td>
-</tr>
-<tr>
-<td><a href="https://github.com/micro/hailo-srv">hailo-srv</a></td>
-<td>A service for the hailo taxi service developer api</td>
-</tr>
-<tr>
-<td><a href="https://github.com/micro/place-srv">place-srv</a></td>
-<td>Store and retrieve places (includes Google Place Search API)</td>
-</tr>
-<tr>
-<td><a href="https://github.com/micro/slack-srv">slack-srv</a></td>
-<td>The slack bot API as a go-micro RPC service</td>
-</tr>
-<tr>
-<td><a href="https://github.com/micro/twitter-srv">twitter-srv</a></td>
-<td>RPC for the twitter API</td>
-</tr>
-<tr>
-<td><a href="https://github.com/micro/user-srv">user-srv</a></td>
-<td>User management and authentication</td>
-</tr>
-</tbody>
-</table>
+<p align="center">
+  <img src="https://github.com/micro/micro/raw/master/doc/overview.png">
+</p>
 
 <h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<a id="learn-more" class="anchor" href="#learn-more" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Learn More</h3>
 
-<p>Micro is authored by <a href="https://github.com/asim" class="user-mention">@asim</a>. Contributors are more than welcome. </p><p></p>Just submit a PR!
-<p></p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Open an issue on GitHub, drop a message at <a href="https://twitter.com/microhq">@microhq</a> or join the <a href="https://micro-services.slack.com">slack</a>, invites yourself <a href="http://micro-invites.herokuapp.com/">here</a>.</p>
+<p>Visit the <a href="https://github.com/micro/micro">repo</a> to get started</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/micro">micro</a></p>
